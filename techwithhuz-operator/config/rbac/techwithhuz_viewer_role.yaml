@@ -1,0 +1,27 @@
+# permissions for end users to view techwithhuzs.
+apiVersion: rbac.authorization.k8s.io/v1
+kind: ClusterRole
+metadata:
+  labels:
+    app.kubernetes.io/name: clusterrole
+    app.kubernetes.io/instance: techwithhuz-viewer-role
+    app.kubernetes.io/component: rbac
+    app.kubernetes.io/created-by: techwithuz-operator
+    app.kubernetes.io/part-of: techwithuz-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: techwithhuz-viewer-role
+rules:
+- apiGroups:
+  - cache.techwithhuz.com
+  resources:
+  - techwithhuzs
+  verbs:
+  - get
+  - list
+  - watch
+- apiGroups:
+  - cache.techwithhuz.com
+  resources:
+  - techwithhuzs/status
+  verbs:
+  - get

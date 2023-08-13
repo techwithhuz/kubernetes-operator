@@ -1,0 +1,7 @@
+apiVersion: cache.techwithhuz.com/v1alpha1 
+kind: Techwithhuz
+metadata:
+  name: techwithhuz-sample
+spec:
+  size: 1
+  containerPort: 8080
