@@ -1,7 +1,7 @@
 # techwithuz-operator
 Kubernetes has revolutionized the world of container orchestration, and Kubernetes Operators take it a step further by automating complex application management tasks.
 
-**#Operator SDK**
+## Operator SDK
 The Operator SDK provides building blocks that simplify Operator development. The Operator SDK makes it easier to build Kubernetes native applications, a process that can require deep, application-specific operational knowledge. Use the SDK to create controllers, handlers, and operators that follow best practices and ensure consistency across your project.
 
 ## Getting Started
